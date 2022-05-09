@@ -1,0 +1,59 @@
+main {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
+
+body {
+    background: linear-gradient(45deg,purple,blue)
+}
+
+.products {
+    flex: 1;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    border: solid 2px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex: 0 0 400px;
+    padding: 10px;
+    margin: 20px;
+    background: linear-gradient(45deg,red,orange)
+}
+
+.card:hover {
+    box-shadow: 5px 10px fuchsia;
+    transition: all 0.5s ease-in-out;
+}
+
+.card div {
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
